@@ -315,6 +315,8 @@ select {
 	box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.06);
     border-top: 5px solid #f9d423;
     margin-left: -1px;
+    cursor: pointer;
+    transition: all .5s ease;
 }
 
 .packag-head {
@@ -390,6 +392,22 @@ select {
     border-top-right-radius: 200px;
     background: #7f8c8d;
     float: right
+}
+
+.packag:hover {
+    box-shadow: 0px 3px 10px 0px #f9d423; 
+}
+
+.packag:nth-child(2):hover {
+    box-shadow: 0px 3px 10px 0px #7f8c8d; 
+}
+
+.packag:nth-child(3):hover {
+    box-shadow: 0px 3px 10px 0px #f85f40;; 
+}
+
+.packag:last-child:hover {
+    box-shadow: 0px 3px 10px 0px #1abc9c; 
 }
 
 .bottom-right {
