@@ -325,7 +325,8 @@ select {
 
 .packag-head {
 	font-family: "Lato", "Tahoma", sans-serif;
-	font-weight: 700;
+    font-weight: 700;
+    color:#282828;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -592,6 +593,10 @@ select {
     color: #2c2c2c;
 }
 
+.packag-footer p {
+    color: #8d8d8d;
+}
+
 .packag-footer p span {
     font-weight: 700;
     font-size: 1.688rem;
@@ -607,6 +612,7 @@ select {
 .packag-footer p + p {
     font-family: "Lato", "Tahoma", sans-serif;
     font-weight: 900;
+    color: #282828;
     font-size: 1rem;
     text-transform: uppercase;
     position: relative;
