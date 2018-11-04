@@ -183,6 +183,10 @@ header nav .active::before {
     width: 80%;
 }
 
+form:focus-within {
+    border: 1px solid #2fac6c;
+}
+
 input, 
 select {
     border: none;
@@ -623,11 +627,23 @@ select {
 .about {
     margin-top: 100px;
     margin-bottom: 85px;
+    position: relative;
+}
+
+.about::before {
+    content: "";
+    width: 1197px;
+    height: 2px;
+    background-image: linear-gradient(90deg, #d4d4d4, #d4d4d4 75%, transparent 75%, transparent 100%);
+    background-size: 6px 1px;
+    border: none;
+    position: absolute;
+    left: calc(50% - 598px);
+    top: -1px;
 }
 
 .about .container {
-    border-top: 2px dotted rgb(212, 212, 212);
-    padding-top: 98px;
+    padding-top: 100px;
 }
 
 .about-wrapper {
@@ -637,7 +653,21 @@ select {
 .about-item {
     width: 480px;
     padding-right: 37px;
-    border-right: 2px dotted rgb(212, 212, 212);
+    position: relative;
+}
+
+.about-item::after {
+    content: "";
+    margin-left: 20px;
+    width: 2px;
+    height: 190px;
+    background-image: linear-gradient(180deg, #ffffff, #ffffff 60%, #d4d4d4 60%, #d4d4d4);
+    background-position: top;
+    background-size: 2px 10px;
+    background-repeat: repeat-y;
+    position: absolute;
+    top: 2px;
+    right: -2px;
 }
 
 .about-item p {
@@ -656,6 +686,7 @@ select {
     width: 90px;
     height: 90px;
     margin: -2px 7px 0 1px;
+    transition: all .5s ease;
 }
 
 .about-team figure:first-child img {
@@ -687,15 +718,20 @@ select {
     margin-bottom: 22px;
 }
 
+.about-team figure:hover .team-img {
+    border: 5px solid rgba(27, 123, 219, 0.56);
+}
+
 .about-team figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .about-team figure:first-child {
-    margin-left: 100px;
+    margin-left: 102px;
     margin-top: 10px;
 }
 
@@ -747,7 +783,7 @@ select {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: -13px;
+    margin-left: -9px;
     margin-top: 3px;
 }
 
@@ -756,7 +792,7 @@ select {
 }
 
 .about-team figure:last-child .society {
-    margin-left: 3px;
+    margin-left: 0;
     margin-top: 3px;   
 }
 
@@ -1009,6 +1045,7 @@ footer nav a:hover {
     display: flex;
     flex-direction: column;
     width: 179px;
+    padding-left: 7px;
 }
 
 .footer-menu-item a {
