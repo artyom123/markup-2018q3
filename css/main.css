@@ -761,16 +761,35 @@ select {
     padding-bottom: 45px;
 }
 
+.comments .container {
+    overflow: hidden;
+}
+
+.comments-wrapper {
+    display: flex;
+    animation: slide 16s infinite;
+}
+
 .comment {
     padding: 45px 115px 0;
     text-align: center;
     line-height: 30px;
+    width: 968px;
 }
 
 .comment-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    16% {margin-left: 0;}
+    33% {margin-left: -1198px;}
+    50% {margin-left: -1198px;}
+    67% {margin-left: -2397px;}
+    100% {margin-left: -2397px;}
 }
 
 .comments span {
