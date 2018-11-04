@@ -306,6 +306,7 @@ select {
     padding-top: 99px;
     background: url('../img/background/bg-packag.png');
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .packag {
@@ -323,7 +324,6 @@ select {
 	text-align: center;
 }
 
- /*circle*/
 .circle-container {
     margin: 35px auto 16px;
     margin-right: 104px;
@@ -409,8 +409,6 @@ select {
     background: #1abc9c;
     float: left;
 }
-
-  /*End circle*/
 
 .packag-head:nth-child(1) {
 	border-color: #f9d423;	
@@ -665,13 +663,6 @@ select {
     margin: 8px 0 -13px 12px;
 }
 
-.about-team img {
-    /* border: 5px solid rgba(44, 62, 80, .1);
-    border-radius: 50%;
-    width: 86%;
-    margin-bottom: 16px; */
-}
-
 .about-team {
     display: flex;
     align-items: center;
@@ -849,7 +840,7 @@ figure:first-child h4 {
 }
 
 figure:last-child i {
-    margin: 0 0 0 0;
+    margin: 0;
 }
 
 figure:last-child i {
@@ -890,6 +881,14 @@ footer .logo {
     margin-left: 0;
 }
 
+footer nav a.active {
+    color: #ffffff;
+}
+
+footer nav a:hover {
+    color: #ffffff;
+}
+
 .navigation-footer {
     display: flex;
     justify-content: space-between;
@@ -908,7 +907,8 @@ footer .logo {
 	color: #686868;
 	font-family: "Lato", "Tahoma", sans-serif;
 	font-weight: 500;
-	font-size: 0.8125rem;
+    font-size: 0.8125rem;
+    transition: all .5s ease;
 }
 
 .navigation-footer-wrapper nav a:last-child {
@@ -971,7 +971,7 @@ footer .logo {
 .footer-menu-item {
     display: flex;
     flex-direction: column;
-    padding-right: 67px;
+    width: 179px;
 }
 
 .footer-menu-item a {
@@ -1005,6 +1005,9 @@ footer .logo {
     font-family: "Font Awesome";
 }
 
+.phone a:hover,
+.mail a:hover,
+.footer-menu-item a:hover,
 .footer-menu-item a.active {
     color: #fffefe;
 }
@@ -1015,10 +1018,6 @@ footer .logo {
 
 .footer-menu-item a:hover::before {
     margin-right: 6px;
-    color: #fffefe;
-}
-
-.footer-menu-item a:hover {
     color: #fffefe;
 }
 
@@ -1042,6 +1041,11 @@ footer .logo {
 .phone a {
     font-weight: 600;
     font-size: 0.875rem;
+}
+
+.phone a,
+.mail a {
+    transition: all .5s ease;
 }
 
 .footer-information-contact-wrapper {
